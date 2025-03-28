@@ -41,7 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: #000000;
   padding: 15px 20px;
 }
 
@@ -82,7 +82,7 @@ body {
 
 /* Högerställd knapp */
 .cta-button {
-  background: #f04e30;
+  background: #A408E0;
   color: white;
   padding: 10px 15px;
   text-decoration: none;
@@ -92,5 +92,17 @@ body {
 }
 
 .cta-button:hover {
-  background: #c73d24;
+  background: #000000;
+  border: #A408E0 2px solid;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #333; /* Behåll bakgrundsfärgen */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Säkerställer att navbaren ligger över annat innehåll */
 }
