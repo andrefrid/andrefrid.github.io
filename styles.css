@@ -111,6 +111,20 @@ border-radius: 50px; /* Rundade hörn */;
 }
 
 /* Skapa svepande effekt med ett pseudo-element */
+/* Högerställd knapp med swipe-effekt */
+.cta-button {
+  position: relative;
+  overflow: hidden; /* Ser till att animationen inte spiller ut */
+  background: #A408E0;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Skapa svepande effekt med ett pseudo-element */
 .cta-button::before {
   content: "";
   position: absolute;
@@ -119,7 +133,7 @@ border-radius: 50px; /* Rundade hörn */;
   width: 100%;
   height: 100%;
   background: white; /* Färgen vid hover */
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
   transform: translateX(0);
   z-index: 0;
 }
@@ -131,13 +145,9 @@ border-radius: 50px; /* Rundade hörn */;
 
 /* Ändrar textfärgen vid hover */
 .cta-button:hover {
-  left: -100%; /* Startar utanför knappen */
-  width: 100%;
-  transition: transform 0.2s ease-in-out;
-  transform: translateX(0);
-  height: 100%;
   color: black;
-  z-index: 5; /* Se till att texten ligger ovanpå svepningen */
-  position: relative; /* Gör så att texten ligger ovanpå svepningen */
+  position: relative;
+  z-index: 1;
 }
+
 
