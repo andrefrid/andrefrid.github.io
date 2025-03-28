@@ -40,7 +40,7 @@ body {
 
 /* Navbar-styling */
 .navbar {
-  position: sticky; /* Gör navbaren klibbig */
+  position: absolute; /* Gör navbaren absolut positionerad */
   top: 20px; /* Sätter avståndet från toppen */
   left: 50%; /* Centrerar navbaren */
   transform: translateX(-50%); /* Justerar positionen */
@@ -54,14 +54,12 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(9.7px);
 -webkit-backdrop-filter: blur(9.7px);
 
-  padding: 15px 20px;
+  padding: 40px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 75px; /* Rundade hörn */
   z-index: 1000;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 /* Vänster sektion (logga + knappar) */
