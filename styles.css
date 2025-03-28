@@ -8,8 +8,10 @@ body {
     hsl(280deg 76% 45%) 98%,
     hsl(284deg 100% 50%) 100%
   );
-  height: 100vh;
-  margin: 0;
+    height: 100vh;
+    margin: 0;
+  }
+  
   .h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -17,13 +19,14 @@ body {
     text-align: center;
     margin-bottom: 1rem;
   }
-    .h2 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: hsl(0deg 0% 100%);
-        text-align: center;
-        margin-bottom: 1rem;
-    }
+
+  .h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(0deg 0% 100%);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 /* Reset för att ta bort standardmarginaler/padding */
 * {
   margin: 0;
@@ -37,7 +40,7 @@ body {
 
 /* Navbar-styling */
 .navbar {
-  position: absolute; /* Gör navbaren positionerad relativt till viewport */
+  position: sticky; /* Gör navbaren klibbig */
   top: 20px; /* Sätter avståndet från toppen */
   left: 50%; /* Centrerar navbaren */
   transform: translateX(-50%); /* Justerar positionen */
@@ -107,7 +110,7 @@ backdrop-filter: blur(9.7px);
   font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
-}
+
 
 /* Skapa svepande effekt med ett pseudo-element */
 .cta-button::before {
@@ -129,5 +132,5 @@ transform: translateX(100%);
 
 /* Ändrar textfärgen vid hover */
 .cta-button:hover {
-color: #ffffff
+color: #A408E0; /* Färgen på texten vid hover */
 }
