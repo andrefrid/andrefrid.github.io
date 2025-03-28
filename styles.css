@@ -131,6 +131,11 @@ border-radius: 50px; /* Rundade hörn */;
 
 /* Ändrar textfärgen vid hover */
 .cta-button:hover {
+  left: -100%; /* Startar utanför knappen */
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+  transform: translateX(0);
+  height: 100%;
   color: black;
   z-index: 5; /* Se till att texten ligger ovanpå svepningen */
   position: relative; /* Gör så att texten ligger ovanpå svepningen */
