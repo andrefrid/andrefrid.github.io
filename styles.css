@@ -25,3 +25,72 @@ body {
         text-align: center;
         margin-bottom: 1rem;
     }
+/* Reset för att ta bort standardmarginaler/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar-styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 15px 20px;
+}
+
+/* Vänster sektion (logga + knappar) */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Logga */
+.logo {
+  height: 40px; /* Anpassa storlek efter behov */
+  margin-right: 20px;
+}
+
+/* Navigationslänkar */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Högerställd knapp */
+.cta-button {
+  background: #f04e30;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #c73d24;
+}
