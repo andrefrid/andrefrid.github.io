@@ -38,12 +38,22 @@ body {
 
 /* Navbar-styling */
 .navbar {
+  position: fixed;
+  top: 20px; /* Sätter avståndet från toppen */
+  left: 50%; /* Centrerar navbaren */
+  transform: translateX(-50%); /* Justerar positionen */
+  width: 90%; /* Anpassa bredden */
+  max-width: 1100px; /* Begränsa maxbredd */
+  background: #000000;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000000;
-  padding: 15px 20px;
+  border-radius: 15px; /* Rundade hörn */
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Skugga för att ge en lyft effekt */
 }
+
 
 /* Vänster sektion (logga + knappar) */
 .nav-left {
@@ -95,14 +105,4 @@ body {
   background: #000000;
   border: #A408E0 2px solid;
 }
-.navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: #333; /* Behåll bakgrundsfärgen */
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000; /* Säkerställer att navbaren ligger över annat innehåll */
-}
+
