@@ -54,12 +54,12 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(9.7px);
 -webkit-backdrop-filter: blur(9.7px);
 
-  padding: 415x 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 75px; /* Rundade hörn */
-  z-index: 1000;
+padding: 15px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 1000; /* Se till att navbaren är ovanpå andra element */
+border-radius: 75px; /* Rundade hörn */;
 }
 
 /* Vänster sektion (logga + knappar) */
@@ -118,7 +118,6 @@ top: 0;
 left: -100%; /* Startar utanför knappen */
 width: 100%;
 height: 100%;
-color: #A408E0; /* Färgen på svepet */
 z-index: -1; /* Ser till att svepet är bakom texten */
 background: white; /* Färgen vid hover */
 transition: transform 0.1s ease-in-out;
@@ -132,5 +131,5 @@ transform: translateX(100%);
 
 /* Ändrar textfärgen vid hover */
 .cta-button:hover {
-color: #A408E0; /* Färgen på texten vid hover */
+color: #000000; /* Färgen på texten vid hover */
 }
