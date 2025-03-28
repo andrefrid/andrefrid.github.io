@@ -49,9 +49,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 15px; /* Rundade hörn */
+  border-radius: 25px; /* Rundade hörn */
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Skugga för att ge en lyft effekt */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Vänster sektion (logga + knappar) */
@@ -102,6 +103,6 @@ body {
 
 .cta-button:hover {
   background: #000000;
-  border: #A408E0 2px solid;
+  border: #A408E0 1px solid;
 }
 
