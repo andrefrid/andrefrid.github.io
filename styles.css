@@ -59,7 +59,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 z-index: 1000; /* Se till att navbaren är ovanpå andra element */
-border-radius: 75px; /* Rundade hörn */;
+border-radius: 50px; /* Rundade hörn */;
 }
 
 /* Vänster sektion (logga + knappar) */
