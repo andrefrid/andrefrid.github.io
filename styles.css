@@ -49,10 +49,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 25px; /* Rundade hörn */
+  border-radius: 50px; /* Rundade hörn */
   z-index: 1000;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* Vänster sektion (logga + knappar) */
@@ -103,6 +103,6 @@ body {
 
 .cta-button:hover {
   background: #000000;
-  border: #A408E0 1px solid;
+  border: #A408E0 0,5px;
 }
 
