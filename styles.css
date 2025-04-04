@@ -208,3 +208,130 @@ body {
 .hero-content .cta-button {
   margin-top: 20px;
 }
+
+/* Logo Slider */
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 40px 0;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 20px 0;
+}
+
+.slider-track {
+  display: flex;
+  animation: slide 20s linear infinite;
+  width: 200%; /* Double width to accommodate duplicated slides */
+}
+
+.slide {
+  flex: 0 0 20%; /* Each slide takes 20% of the container width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.5);
+  transition: filter 0.3s ease;
+}
+
+.slide img:hover {
+  filter: grayscale(0%) brightness(1);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move by half the width to create infinite loop */
+  }
+}
+
+/* Slideshow Section */
+.slideshow-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    position: relative;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    text-align: center;
+}
+
+.slide-content h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.slide-content p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slideshow-controls {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.prev-btn, .next-btn {
+    background: #A7FF71;
+    color: #000;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: #8CE85D;
+    transform: scale(1.1);
+}
