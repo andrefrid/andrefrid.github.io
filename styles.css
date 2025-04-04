@@ -86,7 +86,7 @@ border-radius: 50px; /* Rundade hörn */;
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   padding: 8px 12px;
   transition: 0.3s;
@@ -101,7 +101,7 @@ border-radius: 50px; /* Rundade hörn */;
 .cta-button {
   position: relative;
   overflow: hidden; /* Ser till att animationen inte spiller ut */
-  background: #A408E0;
+  background: #A7FF71;
   color: white;
   padding: 10px 15px;
   text-decoration: none;
@@ -115,8 +115,8 @@ border-radius: 50px; /* Rundade hörn */;
 .cta-button {
   position: relative;
   overflow: hidden; /* Ser till att animationen inte spiller ut */
-  background: #A408E0;
-  color: white;
+  background: #A7FF71;
+  color: rgb(0, 0, 0);
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 20px;
